@@ -42,6 +42,88 @@ int main(int argc, char **argv)
 	}
 	
 	cout << '\n';
+    
+    
+    
+    int count = 0;
+    int nValor;
+    double valor;
+    double soma;
+    
+    
+    while ( count < 10)
+    {
+        cout << "O valor apos o incremento eh: " << count << '\n';
+        count++;
+    }
+    
+    cout << "\n\nDigite o numero de valores a serem somados:\n";
+    cin >> nValor;
+    
+    count = 0;
+    soma = 0;
+    while ( count < nValor)
+    {
+        cout << "Digite o valor: " << '\n';
+        cin >> valor;
+    }
+    
+    
+    
+    int count = 0;
+    int nValor;
+    double valor;
+    double soma;
+    
+    
+    do
+    {
+        cout << "O valor apos o incremento eh: " << count << '\n';
+        count++;
+    } while (count < 10);
+    
+    cout << "\n\n\Digite o numero de valores a serem somados:\n";
+    cin nValor;
+    
+    count = 0;
+    soma = 0;
+    
+    
+    
+    
+    count = 0;
+    soma = 0;
+    while (count < nValor)
+    {
+        cout << "Digite um valor positivo (se negativo sera pedido para digitar novamente); " << count << '\n';
+        cin >> valor;
+        
+        if ( valor < 0)
+            continue;
+            
+            soma+= valor;
+            
+            count++;
+    }
+    
+    if (count > 0)
+        cout << "A media eh: " << soma/count << '\n';
+        
+        
+        
+    cout << "\n\n\Digite valores positivos a serem somados ou qualquer valor negativo para parar: ";
+        
+        
+    count = 0;
+    soma = 0;
+    while ( true)
+        {
+            cout << "Digite o valor: " << '\n';
+            cin >> valor;
+            
+            if (valor < 0)
+                break;
+        }
 	
 	system ( "pause" );
 	return 0;
